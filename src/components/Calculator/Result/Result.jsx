@@ -4,7 +4,7 @@ import styles from "./Result.module.css";
 function Result({ handleReset, tipAmount, numberOfPeople, bill }) {
   return (
     <div
-      className={`${styles.result_bg_color} mt-6 pt-9 pb-6 px-6 rounded-lg flex flex-col justify-between md:pt-12 md:px-9 md:mt-0 md:rounded-xl`}
+      className={`${styles.result_bg_color} relative mt-6 pt-9 pb-6 px-6 rounded-lg flex flex-col justify-between md:pt-12 md:px-9 md:mt-0 md:rounded-xl`}
     >
       <div>
         <div className="flex justify-between items-center">

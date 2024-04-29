@@ -48,30 +48,31 @@ function Calculator() {
   };
 
   return (
-    <div
-      className={`${styles.calculator_bg_color} rounded-t-[26px] p-6 md:grid md:grid-cols-2 md:gap-x-6 md:rounded-b-[26px] md:p-9 md:shadow-black`}
-    >
-      <div>
-        <BillInput handleBillChange={handleBillChange} bill={bill} />
-        <SelectTip
-          tip={tip}
-          handleSelectedTip={handleSelectedTip}
-          customTip={customTip}
-          handleCustomTip={handleCustomTip}
-        />
-        <PeopleInput
-          handlePeopleChange={handlePeopleChange}
+    <div>
+      <div
+        className={`${styles.calculator_bg_color} rounded-t-[26px] px-6 pt-6 pb-20 md:grid md:grid-cols-2 md:gap-x-6 md:rounded-b-[26px] md:p-9 md:shadow-black`}
+      >
+        <div>
+          <BillInput handleBillChange={handleBillChange} bill={bill} />
+          <SelectTip
+            tip={tip}
+            handleSelectedTip={handleSelectedTip}
+            customTip={customTip}
+            handleCustomTip={handleCustomTip}
+          />
+          <PeopleInput
+            handlePeopleChange={handlePeopleChange}
+            numberOfPeople={numberOfPeople}
+          />
+        </div>
+        <Result
+          handleReset={handleReset}
+          tipAmount={tipAmount}
           numberOfPeople={numberOfPeople}
+          bill={bill}
         />
       </div>
-      <Result
-        handleReset={handleReset}
-        tipAmount={tipAmount}
-        numberOfPeople={numberOfPeople}
-        bill={bill}
-      />
-
-      <div className="attribution mt-12">
+      <div className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
