@@ -1,0 +1,16 @@
+.bill_input__label {
+  color: var(--dary-grayish-cyan);
+}
+
+.bill_input__input_box {
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.bill_input__input_box:focus {
+  outline: 2px solid var(--strong-cyan);
+}
+
+.bill_input__input_box__dollar_sign {
+  color: var(--light-grayish-cyan);
+}

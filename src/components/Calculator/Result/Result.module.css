@@ -1,0 +1,24 @@
+.result_bg_color {
+  background-color: var(--very-dark-cyan);
+}
+
+.result__label {
+  color: var(--white);
+}
+
+.result__sub_label {
+  color: var(--light-grayish-cyan);
+}
+
+.result__amount {
+  color: var(--strong-cyan);
+}
+
+.result__reset_btn {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+}
+
+.result__reset_btn:hover {
+  background-color: var(--light-grayish-cyan);
+}

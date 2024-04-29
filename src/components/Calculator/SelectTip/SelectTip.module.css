@@ -1,0 +1,26 @@
+.tip__label {
+  color: var(--dary-grayish-cyan);
+}
+
+.tip__btn {
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+}
+
+.tip__btn_active {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tip__custom__input {
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tip__custom__input:focus {
+  outline: 2px solid var(--strong-cyan);
+}
+
+.tip__custom__input::placeholder {
+  color: var(--dary-grayish-cyan);
+}
